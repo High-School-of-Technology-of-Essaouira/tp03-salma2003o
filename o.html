@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>        
+    
+    <style>
+    body {
+       
+        background-image: url('nature-image.webp') center center/cover;
+    }
+     li {
+           display: block; 
+           float: left;
+        }
+ 
+
+
+    .collapse{
+        border-collapse: collapse ; 
+    }
+    div ul li {
+     float: left;
+     width: 25%;
+     text-align: center;
+    }
+    div ul::after {
+        
+        display: table;
+        clear: both;
+    }
+    div a :hover {
+        color: orange;
+        border-bottom: 2px solid gold;
+    }
+     a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px solid transparent;
+        padding: 10px 0px ;
+    }
+     .deroulant  {
+        content: ".";
+        font-size: 12px;
+     }
+     .sous a:hover  {
+        color: orange;
+        border-bottom: 2px solid gold;
+     }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li class="deroulant"><a href="#Home" >Home  </a> 
+         <ul class="sous">
+            <li><a href="#Articles">Articles</a> </li>
+         <li> <a href="#Aprpos">Apropos</a> </li>
+         <li><a href="#Contact">Contact</a> </li>
+         </ul>
+        </li> 
+         
+        </ul>
+    </nav> 
+</body>
+</html>
